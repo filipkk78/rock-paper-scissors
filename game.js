@@ -65,6 +65,20 @@ function playRound() {
     }   //Possibilities where it's a tie
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-playRound(humanSelection, computerSelection);
+
+
+function playGame() {
+    for (let i = 0; i < 5; i++) {
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+        playRound(humanSelection, computerSelection);;
+    }
+    if(humanScore>computerScore) {
+        console.log("Congratulations, you win!")
+    } else if(humanScore<computerScore) {
+        console.log("Computer wins!")
+    } else if(humanScore==computerScore) {
+        console.log("It's a tie!")
+    } 
+}
+playGame();
