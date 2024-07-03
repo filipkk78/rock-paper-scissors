@@ -19,18 +19,10 @@ function getComputerChoice() {
 }//Gets computer's choice and assigns the corresponding string
 
 let humanChoice;
-let humanChoiceInput;
 function getHumanChoice() {
     do {
-    humanChoiceInput = prompt("Enter your choice: ").toLowerCase();
-    if (humanChoiceInput == "scissors") {
-        humanChoice = "scissors"
-    } else if (humanChoiceInput == "rock") {
-        humanChoice = "rock"
-    } else if (humanChoiceInput == "paper"){
-        humanChoice = "paper"
-    } }
-    while(humanChoice!="rock"&&humanChoice!="paper"&&humanChoice!="scissors")
+    humanChoice = prompt("Enter your choice: ").toLowerCase();
+    } while(humanChoice!="rock"&&humanChoice!="paper"&&humanChoice!="scissors")
 }//Asks the player their choice and assigns it to a variable
 let humanScore = 0
 let computerScore = 0
@@ -72,6 +64,7 @@ function playRound() {
         console.log(`You have ${humanScore} points. Computer has ${computerScore}.`)
     }   //Possibilities where it's a tie
 }
-getHumanChoice();
-getComputerChoice();
-playRound();
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+playRound(humanSelection, computerSelection);
