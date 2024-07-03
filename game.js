@@ -4,7 +4,7 @@ function getRandomNumber(min, max) {
     const maxFloored = Math.floor(max);
     randomNumber = Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); 
     return randomNumber;
-}//Gets random number including both minimal and maximum number 
+}
 
 let computerChoice;
 function getComputerChoice() {
@@ -16,14 +16,14 @@ function getComputerChoice() {
     } else if (randomNumber === 3) {
         computerChoice = "scissors"
     }
-}//Gets computer's choice and assigns the corresponding string
+}
 
 let humanChoice;
 function getHumanChoice() {
     do {
     humanChoice = prompt("Enter your choice: ").toLowerCase();
     } while(humanChoice!="rock"&&humanChoice!="paper"&&humanChoice!="scissors")
-}//Asks the player their choice and assigns it to a variable
+}
 let humanScore = 0
 let computerScore = 0
 function playRound() {
