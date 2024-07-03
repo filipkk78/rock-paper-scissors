@@ -1,0 +1,5 @@
+Generate a random number between 1 and 3
+Assign the numbers to each of possible choices
+Ask the player their choice
+Compare the choice of player and computer
+Determine the winner and display them
