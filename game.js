@@ -91,12 +91,12 @@ function playRound() {
             roundResult.textContent = "You chose scissors. Computer chose scissors. It's a tie.";
     }   //Possibilities where it's a tie
     if(humanScore==5) {
-    roundResult.textContent = "You win";
-    computerScore = 0;
-    humanScore = 0;
+        roundResult.textContent = "You win";
+        computerScore = 0;
+        humanScore = 0;
     } else if(computerScore==5) {
-    roundResult.textContent = "Computer wins";
-    computerScore = 0;
-    humanScore = 0;
+        roundResult.textContent = "Computer wins";
+        computerScore = 0;
+        humanScore = 0;
     }
 }
