@@ -4,7 +4,38 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    background-color: seagreen;
 }
 h1 {
     align-self: center;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.selection{
+    display: flex;
+    gap: 10px;
+}
+.selection-btn{
+    background-color: salmon;
+    color: white;
+    border: 3px solid white;
+    width: 300px;
+    height: 300px;
+    font-size: 50px;
+    box-shadow: 2px 2px 2px black;
+}
+.score-container {
+    display: flex;
+    width: 920px;
+    color: white;
+    font-size: 50px;
+    text-shadow: 1px 1px 2px black;
+    align-items: center;
+    justify-content: space-around;
+}
+

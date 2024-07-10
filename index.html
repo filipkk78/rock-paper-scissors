@@ -7,7 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>The game is played in the console. Press F12 to open it.</h1>
+    <div class="container">
+        <div class="score-container">
+            <div class="score">
+                Human score: &nbsp<span id="humanScoreCounter">0</span>
+            </div>
+            <div class="score">
+                Computer score: &nbsp<span id="humanScoreCounter">0</span>
+            </div>
+        </div>
+        <div class="selection">
+            <button class="selection-btn" id="rock">Rock</button>
+            <button class="selection-btn" id="paper">Paper</button>
+            <button class="selection-btn" id="scissors">Scissors</button>
+        </div>
+    </div>
     <script src="game.js"></script>
 </body>
 </html>
