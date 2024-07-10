@@ -38,4 +38,9 @@ h1 {
     align-items: center;
     justify-content: space-around;
 }
+#roundResult{
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px black
+}
 
